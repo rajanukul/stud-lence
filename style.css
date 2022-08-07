@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+
 *{
   margin: 0;
   padding: 0;
@@ -1010,3 +1011,40 @@ box-shadow: 0 0 3px rgb(175, 174, 174);
     }
   }
   
+
+
+
+  /*Terms and condition page*/
+  .imgterm{
+    text-align: center;
+    background-color: #bfe6f5;
+  }
+  .imgterm img{
+    height: 450px;
+    width: 100%;
+    background-color: #000;
+  }
+  @media(max-width:850px){
+    .imgterm img{
+      height: 300px;
+    }
+  }
+
+  .termcontent{
+    margin: 40px;
+    padding: 20px;
+    background:  url(assets/STUDLENCE__10_-removebg-preview.png);
+  background-position: center;  
+  background-color: #dff1f7;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+   }
+  .termcontent .title{
+    color: rgb(67, 194, 194);
+    font-size: 20px;
+    font-weight: 500;
+  }
+.termcontent .content{
+  font-weight: 450;
+
+}
