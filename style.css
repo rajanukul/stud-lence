@@ -577,8 +577,9 @@
   .demand h2{
     text-align: center;
     margin: 5% 0 2%;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 33px;
+    font-weight: 700;
+    color:#ea3c14;
   }
 
 
@@ -694,6 +695,7 @@ box-shadow: 0 0 3px rgb(175, 174, 174);
   .product-brand {
     font-family:' poppins';
     font-size: 25px;
+    color: #ea3c14;
   }
   
   .product-short-description {
@@ -701,19 +703,22 @@ box-shadow: 0 0 3px rgb(175, 174, 174);
     height: 20px;
     line-height: 20px;
     overflow: hidden;
-    opacity: 0.5;
+    opacity: 0.7;
     text-transform: capitalize;
     margin: 5px 0;
+    color: #F99324;
   }
   
   .price {
     font-weight: 500;
     font-size: 20px;
+    color: #8CC63E;
   }
   
   .actual-price {
     margin-left: 20px;
     opacity: 0.8;
+    color: #8CC63E;
     text-decoration: line-through;
   }
   
@@ -1047,4 +1052,59 @@ box-shadow: 0 0 3px rgb(175, 174, 174);
 .termcontent .content{
   font-weight: 450;
 
+}
+
+
+
+@media(max-width:990px){
+  .darkmode{
+    margin: 15px 0px 0px 10px;
+  }
+}
+body.dark {
+	background: #292C35;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
 }
