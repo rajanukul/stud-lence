@@ -7,6 +7,15 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.navbar{
+  height: 80px;
+}
+@media(max-width:990px)
+{
+  .navbar{
+    height: auto;
+  }
+}
 .navbar-brand img{
     height: 90px;
     width: 120px;
@@ -72,13 +81,17 @@
 .home{
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background: #2696E9;
 }
-
+@media(max-width:915px){
+  .home{
+    min-height: 370px;
+  }
+}
 .home:before{
   z-index: 777;
   content: '';
@@ -140,15 +153,23 @@
   justify-content: center;
   align-items: center;
   transform: translateY(250px);
-  margin-bottom: 12px;
+  margin-bottom: 121px;
 }
-@media(max-width:1100px)
+@media(max-width:1340px)
 {
     .slider-navigation{
-        transform: translateY(100px);
+        transform: translateY(200px);
       }
       
 }
+@media(max-width:915px)
+{
+    .slider-navigation{
+        transform: translateY(200px);
+      }
+      
+}
+
 .slider-navigation .nav-btn{
   width: 12px;
   height: 12px;
