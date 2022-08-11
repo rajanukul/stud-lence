@@ -11,35 +11,43 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
       </head>
 <body>
-    <!--Navbar Starts-->
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="assets/STUDLENCE__10_-removebg-preview.png" alt=""><span class="s1">STUD</span><span class="s2">LENCE</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Online Training
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Web Development</a></li>
-              <li><a class="dropdown-item" href="#">Python</a></li>
-              <li><a class="dropdown-item" href="#">Java</a></li>
-            </ul>
-          </li>
-        </ul>
-        
-        <form class="d-flex" role="search">
-          <input class="form-control form1 me-2" type="search" placeholder="Search Training..." aria-label="Search">
-          <button class="btn btn2 btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
-        </form>
-         <a href="https://rajanukul.github.io/Login-Signup-Form/"><button class="btn login btn-outline-success" type="submit">Register</button></a>
+   <!--Navbar Starts-->
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="assets/STUDLENCE__10_-removebg-preview.png" alt=""><span class="s1">STUD</span><span class="s2">LENCE</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Online Training
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Web Development</a></li>
+            <li><a class="dropdown-item" href="#">Python</a></li>
+            <li><a class="dropdown-item" href="#">Java</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control form1 me-2" type="search" placeholder="Search Training..." aria-label="Search">
+        <button class="btn btn2 btn-outline-success me-5" type="submit"><i class="fas fa-search"></i></button>
+      </form>
+       <a href="https://rajanukul.github.io/Login-Signup-Form/"><button class="btn login btn-outline-success me-5" type="submit">Register</button></a>
+       <!--<button onclick="myFunction()">Toggle dark mode</button>-->
+       <div class="darkmode">
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label me-2" for="chk">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+          <div class="ball"></div>
+        </label>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 <!--Navbar Ends-->
 <div class="imgterm">
     <h1>Terms & Conditions</h1>
@@ -178,7 +186,7 @@
         <ul class="box">
           <li class="link_name">Company</li>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
           <li><a href="aboutus.html">About us</a></li>
           <li><a href="index.html">Get started</a></li>
         </ul>
@@ -222,7 +230,13 @@
     </div>
   </footer>
   
+  <script>
+    const chk = document.getElementById('chk');
   
+  chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+  });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
